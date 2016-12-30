@@ -5,7 +5,7 @@ This project provides vktrace capture/replay tool and other layer tools and driv
 ## Travis-CI Build Status
 | Platform | Build Status |
 |:--------:|:------------:|
-| Linux    | [![Linux Build Status](https://travis-ci.org/KhronosGroup/Vulkan-LoaderAndValidationLayers.svg)](https://travis-ci.org/KhronosGroup/Vulkan-LoaderAndValidationLayers "Linux Build Status") |
+| Linux/Android | [![Linux Build Status](https://travis-ci.org/KhronosGroup/Vulkan-LoaderAndValidationLayers.svg)](https://travis-ci.org/KhronosGroup/Vulkan-LoaderAndValidationLayers "Linux Build Status") |
 
 ## Introduction
 

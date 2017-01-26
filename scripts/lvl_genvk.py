@@ -24,7 +24,7 @@ from parameter_validation_generator import ParamCheckerGeneratorOptions, ParamCh
 from unique_objects_generator import UniqueObjectsGeneratorOptions, UniqueObjectsOutputGenerator
 from dispatch_table_generator import DispatchTableOutputGenerator, DispatchTableOutputGeneratorOptions
 from helper_file_generator import HelperFileOutputGenerator, HelperFileOutputGeneratorOptions
-from api_dump_generator import ApiDumpGeneratorOptions, ApiDumpOutputGenerator, COMMON_CODEGEN, TEXT_CODEGEN
+from api_dump_generator import ApiDumpGeneratorOptions, ApiDumpOutputGenerator, COMMON_CODEGEN, TEXT_CODEGEN, HTML_CODEGEN
 
 # Simple timer functions
 startTime = None
@@ -326,6 +326,31 @@ def makeGenOpts(extensions = [], removeExtensions = [], protect = True, director
         ApiDumpGeneratorOptions(
             input             = TEXT_CODEGEN,
             filename          = 'api_dump_text.h',
+            apiname           = 'vulkan',
+            profile           = None,
+            versions          = allVersions,
+            emitversions      = allVersions,
+            defaultExtensions = 'vulkan',
+            addExtensions     = None,
+            removeExtensions  = None,
+            prefixText        = prefixStrings + vkPrefixStrings,
+            genFuncPointers   = True,
+            protectFile       = protectFile,
+            protectFeature    = False,
+            protectProto      = None,
+            protectProtoStr   = 'VK_NO_PROTOTYPES',
+            apicall           = 'VKAPI_ATTR ',
+            apientry          = 'VKAPI_CALL ',
+            apientryp         = 'VKAPI_PTR *',
+            alignFuncParam    = 48)
+    ]
+    
+     # API dump generator options for api_dump_html.h
+    genOpts['api_dump_html.h'] = [
+        ApiDumpOutputGenerator,
+        ApiDumpGeneratorOptions(
+            input             = HTML_CODEGEN,
+            filename          = 'api_dump_html.h',
             apiname           = 'vulkan',
             profile           = None,
             versions          = allVersions,

@@ -82,9 +82,9 @@ As you complete an item, please copy / paste it into the SUPPORTED FEATURES sect
 | VK_KHR_16bit_storage                   | -        |
 | VK_KHR_bind_memory2                    | ?        |
 | VK_KHR_dedicated_allocation            | -        |
-| VK_KHR_descriptor_update_template      | DONE     |
-| VK_KHX_device_group                    | -        |
-| VK_KHX_device_group_creation           | -        |
+| VK_KHR_descriptor_update_template      | UNTESTED |
+| VK_KHX_device_group                    | NOT DONE |
+| VK_KHX_device_group_creation           | NOT DONE |
 | VK_KHR_external_fence                  | -        |
 | VK_KHR_external_fence_capabilities     | NOT DONE |
 | VK_KHR_external_fence_fd               | NOT DONE |
@@ -98,11 +98,11 @@ As you complete an item, please copy / paste it into the SUPPORTED FEATURES sect
 | VK_KHR_external_semaphore_fd           | NOT DONE |
 | VK_KHR_external_semaphore_win32        | NOT DONE |
 | VK_KHR_get_display_properties2         | -        |
-| VK_KHR_get_memory_requirements2        | DONE     |
-| VK_KHR_get_physical_device_properties2 | DONE     |
-| VK_KHR_get_surface_capabilities2       | DONE     |
+| VK_KHR_get_memory_requirements2        | UNTESTED |
+| VK_KHR_get_physical_device_properties2 | UNTESTED |
+| VK_KHR_get_surface_capabilities2       | UNTESTED |
 | VK_KHR_incremental_present             | -        |
-| VK_KHR_maintenance1                    | NOT DONE |
+| VK_KHR_maintenance1                    | UNTESTED |
 | VK_KHR_maintenance2                    | -        |
 | VK_KHX_multiview                       | -        |
 | VK_KHR_protected_memory                | -        |

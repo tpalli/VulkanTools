@@ -105,7 +105,7 @@ As you complete an item, please copy / paste it into the SUPPORTED FEATURES sect
 | VK_EXT_validation_flags                | 1.0.30.0 |             | DONE     |                     |
 | VK_NVX_device_generated_commands       | 1.0.37.0 |1.0.39.0.next| NOT DONE | Complex to impl     |
 | VK_KHR_get_physical_device_properties2 | 1.0.39.0 |1.0.32.0.next| NOT DONE | Need to implement   |
-| VK_KHX_device_group                    | 1.0.39.0 |1.0.32.0.next| NOT DONE | Need to implement   |
+| VK_KHX_device_group                    | 1.0.39.0 |1.0.32.0.next| NOT DONE | Need to implement   | Joey |
 | VK_KHR_maintenance1                    | 1.0.39.0 |1.0.32.0.next| UNTESTED | Need to test        |
 | VK_KHR_shader_draw_parameters          | 1.0.39.0 |1.0.32.0.next| UNTESTED | Should "just work"  |
 | VK_EXT_acquire_xlib_display            | 1.0.39.0 |1.0.38.0.next| NOT DONE | Need to implement   |
@@ -117,7 +117,7 @@ As you complete an item, please copy / paste it into the SUPPORTED FEATURES sect
 | VK_EXT_display_surface_counter         | 1.0.39.0 |             | NOT DONE | Need to implement   |
 | VK_NN_vi_surface                       | 1.0.39.0 |             | NOT DONE | Nintendo only, will not implement.|
 | VK_KHR_push_descriptor                 | 1.0.42.0 |1.0.32.0.next| NOT DONE | Need to implement   |
-| VK_KHX_device_group_creation           | 1.0.42.0 |1.0.32.0.next| NOT DONE | Need to implement   |
+| VK_KHX_device_group_creation           | 1.0.42.0 |1.0.32.0.next| NOT DONE | Need to implement   | Joey |
 | VK_NV_external_memory                  | 1.0.42.0 |1.0.38.0.next| NOT DONE | May "just work"     |
 | VK_NV_external_memory_capabilities     | 1.0.42.0 |1.0.38.0.next| NOT DONE | Need to implement   |
 | VK_NV_external_memory_win32            | 1.0.42.0 |1.0.38.0.next| NOT DONE | Need to implement   |

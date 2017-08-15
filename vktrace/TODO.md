@@ -77,8 +77,8 @@ As you complete an item, please copy / paste it into the SUPPORTED FEATURES sect
 
 
 **EXTENSION STATUS**
-| Extension Name                         |Pub Intro |Priv Intro   | Status   | Notes               |
-|----------------------------------------|:----------:|:-----------:|:--------:|:-------------------:|
+| Extension Name                         |Pub Intro |Priv Intro   | Status   | Notes               | Implementor|
+|----------------------------------------|:----------:|:-----------:|:--------:|:-------------------:|----------|
 | VK_KHR_android_surface                 | 1.0.3.1  |             | DONE     |                     |
 | VK_KHR_display                         | 1.0.3.1  |             | DONE     |                     |
 | VK_KHR_display_swapchain               | 1.0.3.1  |             | DONE     |                     |
@@ -148,7 +148,7 @@ As you complete an item, please copy / paste it into the SUPPORTED FEATURES sect
 | VK_KHX_subgroup                        |          |1.0.47.0.next| -        | Should "just work"  |
 | VK_KHR_shared_presentable_image        | 1.0.49.0 |1.0.32.0.next| NOT DONE | Need to implement   |
 | VK_KHR_get_surface_capabilities2       | 1.0.49.0 |1.0.47.0.next| UNTESTED | Need to test        |
-| VK_KHR_maintenance2                    |          |1.0.49.0.next| NOT DONE | Should "just work". New image creation flags may affect vkCreateImage tracing. |
+| VK_KHR_maintenance2                    |          |1.0.49.0.next| NOT DONE | Should "just work". New image creation flags may affect vkCreateImage tracing. |David|
 | VK_KHX_depth_stencil_layouts           |          |1.0.49.0.next| NOT DONE | Need to implement   |
 | VK_AMD_texture_gather_bias_lod         | 1.0.51.0 |             | DONE     |                     |
 | VK_KHR_external_fence_capabilities     | 1.0.54.0 |1.0.47.0.next| NOT DONE | Need to implement   |
@@ -169,7 +169,7 @@ As you complete an item, please copy / paste it into the SUPPORTED FEATURES sect
 | VK_KHR_bind_memory2                    |          |1.0.56.0.next| NOT DONE | New functions. Should mostly "just work" |
 | VK_KHR_protected_memory                |          |1.0.56.0.next| NOT DONE | Need to investigate protecting memory in trace file |
 | VK_KHR_sampler_ycbcr_conversion        |          |1.0.56.0.next| NOT DONE | New functions. Should mostly "just work" |
-| VK_KHR_image_format_list               |          |1.0.56.0.next| NOT DONE | Should "just work". New image creation flags may affect vkCreateImage tracing. |
+| VK_KHR_image_format_list               |          |1.0.56.0.next| NOT DONE | Should "just work". New image creation flags may affect vkCreateImage tracing. |David|
 | VK_KHR_relaxed_block_layout            | ?        |1.0.56.0.next| UNTESTED | Should "just work"  |
 | VK_IMG_filter_cubic                    | 1.0.8.0  |             | DONE     |                     |
 | VK_NV_glsl_shader                      | 1.0.8.0  |             | NOT DONE | May "just work"     |

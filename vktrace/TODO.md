@@ -77,42 +77,101 @@ As you complete an item, please copy / paste it into the SUPPORTED FEATURES sect
 
 
 **EXTENSION STATUS**
-| Extension Name                         | Status   |
-|----------------------------------------|:--------:|
-| VK_KHR_16bit_storage                   | -        |
-| VK_KHR_bind_memory2                    | ?        |
-| VK_KHR_dedicated_allocation            | -        |
-| VK_KHR_descriptor_update_template      | UNTESTED |
-| VK_KHX_device_group                    | NOT DONE |
-| VK_KHX_device_group_creation           | NOT DONE |
-| VK_KHR_external_fence                  | -        |
-| VK_KHR_external_fence_capabilities     | NOT DONE |
-| VK_KHR_external_fence_fd               | NOT DONE |
-| VK_KHR_external_fence_win32            | NOT DONE |
-| VK_KHR_external_memory                 | -        |
-| VK_KHR_external_memory_capabilities    | NOT DONE |
-| VK_KHR_external_memory_fd              | NOT DONE |
-| VK_KHR_external_memory_win32           | NOT DONE |
-| VK_KHR_external_semaphore              | -        |
-| VK_KHR_external_semaphore_capabilities | NOT DONE |
-| VK_KHR_external_semaphore_fd           | NOT DONE |
-| VK_KHR_external_semaphore_win32        | NOT DONE |
-| VK_KHR_get_display_properties2         | -        |
-| VK_KHR_get_memory_requirements2        | UNTESTED |
-| VK_KHR_get_physical_device_properties2 | UNTESTED |
-| VK_KHR_get_surface_capabilities2       | UNTESTED |
-| VK_KHR_incremental_present             | -        |
-| VK_KHR_maintenance1                    | UNTESTED |
-| VK_KHR_maintenance2                    | -        |
-| VK_KHX_multiview                       | -        |
-| VK_KHR_protected_memory                | -        |
-| VK_KHR_push_descriptor                 | NOT DONE |
-| VK_KHR_relaxed_block_layout            | -        |
-| VK_KHR_sampler_mirror_clamp_to_edge    | -        |
-| VK_KHR_sampler_ycbcr_conversion        | ?        |
-| VK_KHR_shader_draw_parameters          | -        |
-| VK_KHR_shared_presentable_image        | NOT DONE |
-| VK_KHR_storage_buffer_storage_class    | -        |
-| VK_KHX_subgroup                        | -        |
-| VK_KHR_variable_pointers               | -        |
-| VK_KHR_win32_keyed_mutex               | -        |
+| Extension Name                         |Pub Intro |Priv Intro   | Status   | Notes               |
+|----------------------------------------|:----------:|:-----------:|:--------:|:-------------------:|
+| VK_KHR_android_surface                 | 1.0.3.1  |             | DONE     |                     |
+| VK_KHR_display                         | 1.0.3.1  |             | DONE     |                     |
+| VK_KHR_display_swapchain               | 1.0.3.1  |             | DONE     |                     |
+| VK_KHR_surface                         | 1.0.3.1  |             | DONE     |                     |
+| VK_KHR_swapchain                       | 1.0.3.1  |             | DONE     |                     |
+| VK_KHR_wayland_surface                 | 1.0.3.1  |             | DONE     |                     |
+| VK_KHR_win32_surface                   | 1.0.3.1  |             | DONE     |                     |
+| VK_KHR_xcb_surface                     | 1.0.3.1  |             | DONE     |                     |
+| VK_KHR_xlib_surface                    | 1.0.3.1  |             | DONE     |                     |
+| VK_KHR_mir_surface                     | 1.0.3.1  |             | DONE     |                     |
+| VK_EXT_debug_report                    | 1.0.3.1  |             | DONE     |                     |
+| VK_MVK_moltenvk                        | 1.0.3.1  |             | NOT DONE | Apple only, will not implement. |
+| VK_MVK_ios_surface                     | 1.0.3.1  |             | NOT DONE | IOS only, will not implement.   |
+| VK_MVK_macos_surface                   | 1.0.3.1  |             | NOT DONE | MacOS only, will not implement. |
+| VK_AMD_rasterization_order             | 1.0.13.0 |             | DONE     |                     |
+| VK_EXT_debug_marker                    | 1.0.13.0 |             | DONE     | Supported           |
+| VK_AMD_gcn_shader                      | 1.0.21.0 |             | DONE     |                     |
+| VK_AMD_shader_trinary_minmax           | 1.0.21.0 |             | DONE     |                     |
+| VK_IMG_format_pvrtc                    | 1.0.24.0 |             | NOT DONE | Spec not published  |
+| VK_AMD_draw_indirect_count             | 1.0.26.0 |             | DONE     |                     |
+| VK_AMD_gpu_shader_half_float           | 1.0.30.0 |             | DONE     |                     |
+| VK_AMD_negative_viewport_height        | 1.0.30.0 |             | DONE     |                     |
+| VK_AMD_shader_ballot                   | 1.0.30.0 |             | DONE     |                     |
+| VK_EXT_validation_flags                | 1.0.30.0 |             | DONE     |                     |
+| VK_NVX_device_generated_commands       | 1.0.37.0 |1.0.39.0.next| NOT DONE | Complex to impl     |
+| VK_KHR_get_physical_device_properties2 | 1.0.39.0 |1.0.32.0.next| NOT DONE | Need to implement   |
+| VK_KHX_device_group                    | 1.0.39.0 |1.0.32.0.next| NOT DONE | Need to implement   |
+| VK_KHR_maintenance1                    | 1.0.39.0 |1.0.32.0.next| UNTESTED | Need to test        |
+| VK_KHR_shader_draw_parameters          | 1.0.39.0 |1.0.32.0.next| UNTESTED | Should "just work"  |
+| VK_EXT_acquire_xlib_display            | 1.0.39.0 |1.0.38.0.next| NOT DONE | Need to implement   |
+| VK_EXT_direct_mode_display             | 1.0.39.0 |1.0.38.0.next| NOT DONE | Need to implement   |
+| VK_EXT_shader_subgroup_ballot          | 1.0.39.0 |             | DONE     |                     |
+| VK_EXT_shader_subgroup_vote            | 1.0.39.0 |             | DONE     |                     |
+| VK_EXT_swapchain_colorspace            | 1.0.39.0 |             | DONE     |                     |
+| VK_EXT_display_control                 | 1.0.39.0 |             | NOT DONE | Need to implement   |
+| VK_EXT_display_surface_counter         | 1.0.39.0 |             | NOT DONE | Need to implement   |
+| VK_NN_vi_surface                       | 1.0.39.0 |             | NOT DONE | Nintendo only, will not implement.|
+| VK_KHR_push_descriptor                 | 1.0.42.0 |1.0.32.0.next| NOT DONE | Need to implement   |
+| VK_KHX_device_group_creation           | 1.0.42.0 |1.0.32.0.next| NOT DONE | Need to implement   |
+| VK_NV_external_memory                  | 1.0.42.0 |1.0.38.0.next| NOT DONE | May "just work"     |
+| VK_NV_external_memory_capabilities     | 1.0.42.0 |1.0.38.0.next| NOT DONE | Need to implement   |
+| VK_NV_external_memory_win32            | 1.0.42.0 |1.0.38.0.next| NOT DONE | Need to implement   |
+| VK_KHR_external_memory_capabilities    | 1.0.42.0 |1.0.38.0.next| NOT DONE | Need to implement   |
+| VK_KHR_external_memory_fd              | 1.0.42.0 |1.0.38.0.next| NOT DONE | Need to implement   |
+| VK_KHR_external_memory_win32           | 1.0.42.0 |1.0.38.0.next| NOT DONE | Need to implement   |
+| VK_KHR_external_semaphore_capabilities | 1.0.42.0 |1.0.38.0.next| NOT DONE | Need to implement   |
+| VK_KHR_external_semaphore_fd           | 1.0.42.0 |1.0.38.0.next| NOT DONE | Need to implement   |
+| VK_KHR_external_semaphore_win32        | 1.0.42.0 |1.0.38.0.next| NOT DONE | Need to implement   |
+| VK_KHR_external_memory                 | 1.0.42.0 |1.0.38.0.next| -        | Should "just work"  |
+| VK_KHR_external_semaphore              | 1.0.42.0 |1.0.38.0.next| -        | Should "just work"  |
+| VK_KHX_multiview                       | 1.0.42.0 |1.0.38.0.next| -        | Should "just work"  |
+| VK_KHR_win32_keyed_mutex               | 1.0.42.0 |1.0.38.0.next| UNTESTED | Should "just work"  |
+| VK_NV_win32_keyed_mutex                | 1.0.42.0 |1.0.39.0.next| NOT DONE | May "just work"     |
+| VK_NV_clip_space_w_scaling             | 1.0.42.0 |             | NOT DONE |                     |
+| VK_NV_geometry_shader_passthrough      | 1.0.42.0 |             | NOT DONE | May "just work"     |
+| VK_NV_sample_mask_override_coverage    | 1.0.42.0 |             | NOT DONE | May "just work"     |
+| VK_NV_viewport_array2                  | 1.0.42.0 |             | NOT DONE | May "just work"     |
+| VK_NV_viewport_swizzle                 | 1.0.42.0 |             | NOT DONE | May "just work"     |
+| VK_NVX_multiview_per_view_attributes   | 1.0.42.0 |             | NOT DONE | May "just work"     |
+| VK_EXT_discard_rectangles              | 1.0.42.0 |             | NOT DONE | Need to implement   |
+| VK_EXT_hdr_metadata                    | 1.0.42.0 |             | NOT DONE | Need to implement   |
+| VK_KHR_descriptor_update_template      | 1.0.42.0 |             | UNTESTED | Need to test        |
+| VK_KHR_variable_pointers               | 1.0.42.0 |             | UNTESTED | Should "just work"  |
+| VK_KHR_incremental_present             | 1.0.46.0 |1.0.38.0.next| -        | Should "just work"  |
+| VK_GOOGLE_display_timing               | 1.0.46.0 |             | NOT DONE | Need to implement   |
+| VK_KHR_get_display_properties2         |          |1.0.47.0.next| NOT DONE | Need to implement.  |
+| VK_KHX_subgroup                        |          |1.0.47.0.next| -        | Should "just work"  |
+| VK_KHR_shared_presentable_image        | 1.0.49.0 |1.0.32.0.next| NOT DONE | Need to implement   |
+| VK_KHR_get_surface_capabilities2       | 1.0.49.0 |1.0.47.0.next| UNTESTED | Need to test        |
+| VK_KHR_maintenance2                    |          |1.0.49.0.next| NOT DONE | Should "just work". New image creation flags may affect vkCreateImage tracing. |
+| VK_KHX_depth_stencil_layouts           |          |1.0.49.0.next| NOT DONE | Need to implement   |
+| VK_AMD_texture_gather_bias_lod         | 1.0.51.0 |             | DONE     |                     |
+| VK_KHR_external_fence_capabilities     | 1.0.54.0 |1.0.47.0.next| NOT DONE | Need to implement   |
+| VK_KHR_external_fence_fd               | 1.0.54.0 |1.0.47.0.next| NOT DONE | Need to implement   |
+| VK_KHR_external_fence_win32            | 1.0.54.0 |1.0.47.0.next| NOT DONE | Need to implement   |
+| VK_KHR_get_memory_requirements2        | 1.0.54.0 |1.0.47.0.next| NOT DONE | Need to implement   |
+| VK_KHR_16bit_storage                   | 1.0.54.0 |1.0.47.0.next| -        | Should "just work"  |
+| VK_KHR_external_fence                  | 1.0.54.0 |1.0.47.0.next| -        | Should "just work"  |
+| VK_KHR_storage_buffer_storage_class    | 1.0.54.0 |1.0.47.0.next| -        | Should "just work"  |
+| VK_KHR_sampler_filter_minmax           | 1.0.54.0 |1.0.49.0.next| DONE     |                     |
+| VK_NV_dedicated_allocation             | 1.0.54.0 |1.0.49.0.next| NOT DONE | May "just work"     |
+| VK_KHR_dedicated_allocation            | 1.0.54.0 |1.0.49.0.next| -        | Should "just work"  |
+| VK_AMD_gpu_shader_int16                | 1.0.54.0 |             | DONE     |                     |
+| VK_NV_fill_rectangle                   | 1.0.54.0 |             | NOT DONE | May "just work"     |
+| VK_NV_fragment_coverage_to_color       | 1.0.54.0 |             | NOT DONE | May "just work"     |
+| VK_NV_framebuffer_mixed_samples        | 1.0.54.0 |             | NOT DONE | May "just work"     |
+| VK_EXT_blend_operation_advanced        | 1.0.54.0 |             | UNTESTED | Need to test        |
+| VK_KHR_bind_memory2                    |          |1.0.56.0.next| NOT DONE | New functions. Should mostly "just work" |
+| VK_KHR_protected_memory                |          |1.0.56.0.next| NOT DONE | Need to investigate protecting memory in trace file |
+| VK_KHR_sampler_ycbcr_conversion        |          |1.0.56.0.next| NOT DONE | New functions. Should mostly "just work" |
+| VK_KHR_image_format_list               |          |1.0.56.0.next| NOT DONE | Should "just work". New image creation flags may affect vkCreateImage tracing. |
+| VK_KHR_relaxed_block_layout            | ?        |1.0.56.0.next| UNTESTED | Should "just work"  |
+| VK_IMG_filter_cubic                    | 1.0.8.0  |             | DONE     |                     |
+| VK_NV_glsl_shader                      | 1.0.8.0  |             | NOT DONE | May "just work"     |
+| VK_KHR_sampler_mirror_clamp_to_edge    | 1.0.8.0  |             | UNTESTED | Should "just work"  |
+| VK_AMD_shader_explicit_vertex_parameter| 1.0.21.0 |             | DONE     |                     |
